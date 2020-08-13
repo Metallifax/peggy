@@ -1,5 +1,11 @@
-import './lib/jquery-3.5.1.min';
+$(document).ready(function () {
+    $('.jumbotron').hide()
+        .fadeIn('slow');
+    $('.row').hide()
+        .fadeIn('slow');
+    $('#navigation').hide().fadeIn('slow');
 
-$(document).ready(() => {
-
+    $('#hide-card').click(() => {
+        $('#warning-card').slideUp('fast');
+    });
 });
